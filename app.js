@@ -76,14 +76,3 @@ app.use('/notes', notes)
 app.use('/', index);
 
 module.exports = app;
-
-/*
-
-implementar la api de trakt para el form de reviews
-implementar comentarios
-implementar busquedas
-implementar likes de pelis para el usuario
-admin panel con crud para agregar usuarios autores
-llenar la bd
-
-*/
