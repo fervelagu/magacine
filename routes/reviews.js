@@ -9,7 +9,9 @@ const Review = require("../models/Review")
 
 //get reviews
 router.get('/', (req,res) => {
-    Review.find().then(reviews => {
+    Review.find()
+    .then(reviews => {
+        console.log(reviews)
         return res.status(200).json(reviews)
     }).catch(e => {
         return res.status(400).json(e)
@@ -67,8 +69,10 @@ router.delete('/:id', (req, res, next) => {
 router.get('/mine/:id', (req, res) => {
     Review.find({author: req.params.id})
     .then(reviews=>{
+        console.log(reviews)
         res.json({reviews})
     })
+    .then(e=>res.json({message:'error', e}))
 })
 
 module.exports = router;
