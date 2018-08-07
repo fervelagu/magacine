@@ -41,17 +41,6 @@ router.get('/:id', (req, res) => {
     })
 })
 
-//get one review with user
-// router.get('/:id', (req, res) => {
-//     User.find({author: req.params.user})
-//     Review.findById(req.params.id).then(review => {
-//         if (!review) return res.status(404)
-//             return res.status(200).json(review)
-//     }).catch(err => {
-//         return res.status(500).json(err)
-//     })
-// })
-
 //edit a review
 /* this route make an update to the model review but 
 respect the filed even when they don't come in the update */
