@@ -28,11 +28,11 @@ const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
 const app = express();
-const cors = require('cors');
-app.use(cors({
-  credentials:true,
-  origin:true
-}));
+// const cors = require('cors');
+// app.use(cors({
+//   credentials:true,
+//   origin:true
+// }));
 
 app.use(session({
   secret: "ferss",
