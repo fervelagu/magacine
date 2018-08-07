@@ -69,8 +69,8 @@ const auth = require('./routes/auth');
 const index = require('./routes/index');
 const reviews = require('./routes/reviews');
 const notes = require('./routes/notes');
-app.use('/', auth);
 app.use('/', index);
+app.use('/', auth);
 app.use('/reviews', reviews);
 app.use('/notes', notes)
 
