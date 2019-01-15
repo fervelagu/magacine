@@ -2,4 +2,4 @@
 
 Backend :)
 
-Build with Mongo, ExpressJS & Node.
+Build with Mongo, Express & Node.
